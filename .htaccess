@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule ^public_html/www/(.*)$ public_html/www/$1 [L]
+RewriteRule ^(.*)$ public_html/www/$1
