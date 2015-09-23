@@ -6,7 +6,6 @@ if($config["debug"]){
   ini_set("display_errors", 1);
 }
 
-
 session_start();
 if(!empty($_SESSION['visited_pages'])) {
   $_SESSION['visited_pages']['prev'] = $_SESSION['visited_pages']['current'];
