@@ -5,7 +5,7 @@ if($_SERVER["HTTP_HOST"] == "localhost")
 
 $config = array(
   "db" => array(
-    "db_host" => "localhost",
+    "db_host" => "",
     "db_user" => "",
     "db_password" => "",
     "db_name" => ""
