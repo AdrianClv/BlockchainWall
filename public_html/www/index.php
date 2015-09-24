@@ -6,7 +6,7 @@
   require_once(TEMPLATES_PATH . "/header.php");
 ?>
 
-test2
+test
 <?php
   require_once(TEMPLATES_PATH . "/footer.php");
 ?>
