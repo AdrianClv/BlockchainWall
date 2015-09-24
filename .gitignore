@@ -1,4 +1,6 @@
 resources/config.php
+resources/lib/bitcoinclient.php
+resources/lib/OP_RETURN.php
 
 # Windows image file caches
 Thumbs.db
