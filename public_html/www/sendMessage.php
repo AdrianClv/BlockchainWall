@@ -12,8 +12,9 @@
     </div>
     <div class="card-block">
       <form method="post" class="form-inline" action="message.php">
-        <div class="input-group col-md-8 p-l-0">
+        <div class="input-group">
           <input class="form-control" type="text" id="message" name="message" placeholder="Write your message here">
+          <span class="input-group-addon" id="emojis">&#9786;</span>
         </div>
         <button class="btn btn-secondary" type="submit">Send</button>
       </form>
