@@ -34,7 +34,7 @@
       Message info
     </div>
     <div class="card-block">
-      <?php echo $message; ?>
+      <span><?php echo $message; ?></span>
       <p class="card-text">
         <?php
           echo '<pre>';

@@ -9,7 +9,10 @@
     <link rel="icon" href="<?php echo IMG_PATH . '/favicon.ico' ?>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="<?php echo CSS_PATH . '/template.css' ?>">
+    <!-- Emoji -->
+    <link rel="stylesheet" href="<?php echo CSS_PATH . '/emoji.css' ?>">    
   </head>
   <body>
     <!-- Navbar -->
