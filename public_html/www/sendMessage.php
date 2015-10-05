@@ -2,7 +2,7 @@
 /*
 TODO:
   Hacer lista de emoticonos válidos y llamar desde aquí a funcion que los postee.
-  controlar que el emoticono se inserte donde el cursor y no solo al final (?)
+  Controlar que el emoticono se inserte donde el cursor y no solo al final (?)
 */
   require_once("../../resources/init.php");
   require_once(LIBRARY_PATH . "/emoji.php");
@@ -16,6 +16,7 @@ TODO:
       Send Message
     </div>
     <div class="card-block">
+      <div id="prev" class="m-b-15"></div>
       <form method="post" class="form-inline" action="message.php">
         <div class="input-group w-80">
           <input class="form-control" type="text" id="message" name="message" placeholder="Write your message here">
@@ -51,7 +52,20 @@ $('#message').keyup(function(){
 
   $('#bytes').text(bytes);
   $('#transactions').text(parseInt((bytes-1)/80)+1);
+  ajax();
 });
+
+// Update the preview message with emojis
+function ajax(){
+  $.ajax({ url: "ajax.php",
+           data: {command: 'emoji_unified_to_html', code: $('#message').val()},
+           type: 'POST',
+           success:
+            function (response){
+              $("#prev").html(response);
+            }
+  });
+}
 
 // Show/hide the list of emojis
 $('#emojis, .close').click(function(e){

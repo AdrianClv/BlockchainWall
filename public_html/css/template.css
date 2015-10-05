@@ -40,6 +40,10 @@ body {
   width: 20px !important;
 }
 
+.m-b-15 {
+  margin-bottom: 15px;
+}
+
 .search-box {
   padding: 5px;
   margin-bottom: 0;
