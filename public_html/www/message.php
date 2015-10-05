@@ -1,5 +1,6 @@
 <?php
   require_once("../../resources/init.php");
+  require_once(LIBRARY_PATH . "/emoji.php");
   require_once(LIBRARY_PATH . "/OP_RETURN.php");
   require_once(LIBRARY_PATH . "/functions.php");
 
@@ -34,7 +35,9 @@
       Message info
     </div>
     <div class="card-block">
-      <span><?php echo $message; ?></span>
+      <span>
+        <?php echo printMessage($message); ?>
+      </span>
       <p class="card-text">
         <?php
           echo '<pre>';

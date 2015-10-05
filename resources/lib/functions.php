@@ -16,4 +16,14 @@ function printSuccess($msg){
           . $msg .
         '</div>';
 }
+
+function printMessage($string){
+  $array = explode(" ", $string);
+  $text = "";
+  
+  foreach($array as $word)
+    $text .= emoji_unified_to_html($word) . ' ';
+
+  return $text;
+}
 ?>
